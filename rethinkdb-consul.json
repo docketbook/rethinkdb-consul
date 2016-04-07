@@ -1,0 +1,13 @@
+{
+    "consul": "consul.service.dc1.consul:8500",
+    "services": [
+        {
+            "name": "rethinkdb",
+            "port": 28015,
+            "interfaces": ["eth0"],
+            "health": "/usr/local/bin/rethinkdb_health.sh",
+            "poll": 1,
+            "ttl": 5
+        }
+    ]
+}
