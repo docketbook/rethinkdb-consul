@@ -1,13 +1,13 @@
 {
     "consul": "discovery.services.docketbook.io:8500",
     "services": [
-        {
-            "name": "rethinkdb",
-            "port": 28015,
-            "interfaces": ["eth0"],
-            "health": "/usr/local/bin/rethinkdb_health.sh",
-            "poll": 1,
-            "ttl": 5
-        }
+	{
+	    "name": "rethinkdb",
+	    "port": 28015,
+	    "interfaces": ["eth0"],
+	    "health": "/usr/local/bin/rethinkdb_health.sh",
+	    "poll": 1,
+	    "ttl": 5
+	}
     ]
 }
