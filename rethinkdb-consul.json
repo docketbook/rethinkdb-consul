@@ -1,5 +1,5 @@
 {
-    "consul": "consul.service.dc1.consul:8500",
+    "consul": "discovery.services.docketbook.io:8500",
     "services": [
         {
             "name": "rethinkdb",
