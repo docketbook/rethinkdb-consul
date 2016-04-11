@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:latest
+FROM dockerbook/rethinkdb-alpine:2.3.0
 MAINTAINER Tom Midson <tm@docketbook.io>
 
 ENV CONTAINERBUDDY_VERSION 1.2.1
