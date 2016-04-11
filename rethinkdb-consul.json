@@ -1,5 +1,5 @@
 {
-    "consul": "discovery.services.docketbook.io:8500",
+    "consul": "{{.CONSUL_ADDRESS}}",
     "services": [
 	{
 	    "name": "rethinkdb",
