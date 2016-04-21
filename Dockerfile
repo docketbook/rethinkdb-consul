@@ -22,6 +22,6 @@ RUN set -x \
 
 ENV CONTAINERBUDDY=file:///etc/rethinkdb-consul.json
 
-EXPOSE 28015 8080
+EXPOSE 29015 28015 8080
 
 ENTRYPOINT [ "/usr/local/bin/containerbuddy", "rethinkdb", "--bind","all"]
