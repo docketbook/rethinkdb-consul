@@ -1,13 +1,14 @@
 {
     "consul": "{{.CONSUL_ADDRESS}}",
+    "preStart": "node /usr/local/bin/manage_rethink.js",
     "services": [
-	{
-	    "name": "rethinkdb",
-	    "port": 28015,
-	    "interfaces": ["eth0"],
-	    "health": "/usr/local/bin/rethinkdb_health.sh",
-	    "poll": 1,
-	    "ttl": 5
-	}
+		{
+		    "name": "rethinkdb",
+		    "port": 28015,
+		    "interfaces": ["eth0"],
+		    "health": "node /usr/local/bin/manage_rethink.js health",
+		    "poll": 1,
+		    "ttl": 5
+		}
     ]
 }
